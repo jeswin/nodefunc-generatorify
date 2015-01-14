@@ -5,7 +5,7 @@
   },
   "name": "nodefunc-generatorify",
   "version": "0.1.1",
-  "description": "Converts a node style function (which takes a callback) into one that returns a promise.",
+  "description": "Convert a node style function to a generator function that yields promises.",
   "repository": {
     "type": "git",
     "url": "https://github.com/jeswin/nodefunc-generatorify.git"
