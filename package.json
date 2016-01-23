@@ -4,15 +4,22 @@
     "email": "jeswinpk@agilehead.com"
   },
   "name": "nodefunc-generatorify",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Convert a node style function to a generator function that yields promises.",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jeswin/nodefunc-generatorify.git"
   },
   "main": "lib/nodefunc-generatorify",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*",
+    "co": "*"
+  },
   "engines": {
     "node": ">= 0.11.9"
   },
@@ -25,7 +32,6 @@
     "url": "https://github.com/jeswin/nodefunc-generatorify/issues"
   },
   "homepage": "https://github.com/jeswin/nodefunc-generatorify",
-  "scripts": {},
   "maintainers": [
     {
       "name": "jeswin",
