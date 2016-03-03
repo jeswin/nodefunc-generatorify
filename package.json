@@ -4,7 +4,7 @@
     "email": "jeswinpk@agilehead.com"
   },
   "name": "nodefunc-generatorify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Convert a node style function to a generator function that yields promises.",
   "scripts": {
     "test": "mocha test/test.js"
@@ -20,22 +20,11 @@
     "mocha": "*",
     "co": "*"
   },
-  "engines": {
-    "node": ">= 0.11.9"
-  },
   "keywords": [
     "async, flow-control"
   ],
   "license": "MIT",
-  "gitHead": "c503b628639c6dbc96a72e777da46e99a0fbbc4b",
   "bugs": {
     "url": "https://github.com/jeswin/nodefunc-generatorify/issues"
-  },
-  "homepage": "https://github.com/jeswin/nodefunc-generatorify",
-  "maintainers": [
-    {
-      "name": "jeswin",
-      "email": "jeswinpk@agilehead.com"
-    }
-  ]
+  }
 }
