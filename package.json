@@ -4,7 +4,7 @@
     "email": "jeswinpk@agilehead.com"
   },
   "name": "nodefunc-generatorify",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Convert a node style function to a generator function that yields promises.",
   "scripts": {
     "test": "mocha test/test.js"
