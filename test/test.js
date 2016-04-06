@@ -34,7 +34,7 @@ describe("Nodefunc Generatorify", function() {
   });
 
   it(`If callback has multiple parameters, return an array`, function() {
-    var generatorFn = generatorify(sayHelloAndMaster);
+    var generatorFn = generatorify(sayHelloAndMaster, { hasMultipleResults: true });
     var gen = generatorFn("world");
     var result = gen.next();
     return result.value.then(function(val) {
@@ -44,7 +44,7 @@ describe("Nodefunc Generatorify", function() {
   });
 
   it(`Convert a node func (without err param) to a generator func returning a promise`, function() {
-    var generatorFn = generatorify(sayHelloWithoutError, true);
+    var generatorFn = generatorify(sayHelloWithoutError, { noErrorParameter: true });
     var gen = generatorFn("world");
     var result = gen.next();
     return result.value.then(function(val) {
@@ -53,7 +53,7 @@ describe("Nodefunc Generatorify", function() {
   });
 
   it(`If callback (without err param) has multiple parameters, return an array`, function() {
-    var generatorFn = generatorify(sayHelloAndMasterWithoutError, true);
+    var generatorFn = generatorify(sayHelloAndMasterWithoutError, { noErrorParameter: true, hasMultipleResults: true });
     var gen = generatorFn("world");
     var result = gen.next();
     return result.value.then(function(val) {
